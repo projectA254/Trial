@@ -168,7 +168,13 @@ display:none;
 div.toggler:hover .d-none{
 display:block;
 }
-div.toggler:hover section.d-none div.loader div.typer{
+div.toggler:hover section.d-none div.loader div.typer::before{
 content: "You hovered me";
-display:block;
+}
+div.toggler:hover .header::after{
+    content: '  Isn`t that great';
+    color: chocolate;
+}
+.header{
+    color: wheat;
 }
